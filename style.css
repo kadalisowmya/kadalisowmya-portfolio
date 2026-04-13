@@ -1446,7 +1446,25 @@ select.form-control {
         background-color: #2a2a2a !important;
     }
 }
-/* Make About Me text visible */
-.about-card, .about-card p, .about-card h4, .about-card div {
+/* FORCE ABOUT SECTION TO BE VISIBLE */
+.about-card,
+.about-card .card-body,
+.about-card h4,
+.about-card p,
+.about-card .info-item,
+.about-card strong,
+.about-card div {
+    color: #1a1a1a !important;
+}
+
+#about p,
+#about h4,
+#about .info-item {
+    color: #1a1a1a !important;
+}
+
+.card-body p,
+.card-body h4,
+.card-body div {
     color: #1a1a1a !important;
 }
