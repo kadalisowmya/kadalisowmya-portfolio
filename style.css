@@ -1425,40 +1425,24 @@ canvas {
 .badge.bg-warning {
     background: #f59e0b !important;
 }
-/* FIX: Make About Me text visible */
-.about-card .card-body,
-.about-card p,
-.about-card h4,
-.about-card .info-item,
-.about-card strong {
-    color: #333 !important;
+/* FIX ONLY: Make input text visible - Keep everything else same */
+.form-control, 
+#userAnswer,
+#contactForm input,
+#contactForm textarea,
+select.form-control {
+    color: #000000 !important;
+    background-color: #ffffff !important;
 }
 
-/* For dark mode */
+/* Keep dark mode users happy too */
 @media (prefers-color-scheme: dark) {
-    .about-card .card-body,
-    .about-card p,
-    .about-card h4,
-    .about-card .info-item,
-    .about-card strong {
-        color: #f0f0f0 !important;
-    }
-}
-
-/* FIX: Make all text in cards visible */
-.card,
-.card-body,
-.card-title,
-.card-text {
-    color: #333 !important;
-}
-
-/* Dark mode card text */
-@media (prefers-color-scheme: dark) {
-    .card,
-    .card-body,
-    .card-title,
-    .card-text {
-        color: #e0e0e0 !important;
+    .form-control, 
+    #userAnswer,
+    #contactForm input,
+    #contactForm textarea,
+    select.form-control {
+        color: #ffffff !important;
+        background-color: #2a2a2a !important;
     }
 }
