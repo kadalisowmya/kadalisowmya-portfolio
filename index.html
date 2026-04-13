@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowmya - Portfolio</title>
+    <title>Sowmya - Portfolio | Data & AI Enthusiast</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,9 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js for Infographics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -27,21 +30,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#data-insights">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ai-demo">AI Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,27 +49,21 @@
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <h1 class="hero-title">Hi, I'm <span class="text-primary">Sowmya</span></h1>
-                        <h2 class="hero-subtitle">2nd Year B.Tech CSE Student | Technology Enthusiast</h2>
-                        <p class="hero-description">Passionate about software development and emerging technologies, constantly learning and building innovative solutions.</p>
+                        <h2 class="hero-subtitle">2nd Year B.Tech CSE | Data & AI Enthusiast</h2>
+                        <p class="hero-description">Passionate about Data Visualization, AI applications, and building smart solutions that solve real-world problems.</p>
                         <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary me-3">View My Work</a>
-                            <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                            <a href="#data-insights" class="btn btn-primary me-3">View Insights</a>
+                            <a href="#ai-demo" class="btn btn-outline-primary">Try AI Demo</a>
                         </div>
                         <div class="social-links mt-4">
-                            <a href="https://github.com/kadalisowmya" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+                            <a href="https://github.com/kadalisowmya" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
                     </div>
                 </div>
             </div>
@@ -98,26 +87,12 @@
                         <div class="card about-card">
                             <div class="card-body">
                                 <h4 class="mb-3">Hello! I'm Sowmya</h4>
-                                <p class="mb-3">I am a dedicated 2nd year B.Tech Computer Science and Engineering student with a passion for technology and innovation. My journey in the world of programming began with curiosity and has evolved into a deep love for creating digital solutions.</p>
-                                
-                                <p class="mb-3">I am particularly interested in web development, software engineering, and cloud technologies. Through my academic journey and personal projects, I have developed proficiency in multiple programming languages and frameworks.</p>
-                                
+                                <p class="mb-3">I am a dedicated 2nd year B.Tech Computer Science student with a passion for data visualization, AI applications, and building intelligent systems. My journey focuses on creating meaningful insights from data and making AI accessible.</p>
+                                <p class="mb-3">I specialize in creating infographics, data dashboards, and AI-powered demos that demonstrate clear visual communication and basic AI awareness.</p>
                                 <div class="row mt-4">
-                                    <div class="col-md-6">
-                                        <div class="info-item">
-                                            <i class="fas fa-graduation-cap text-primary me-2"></i>
-                                            <strong>Education:</strong> B.Tech CSE (2nd Year)
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-item">
-                                            <i class="fas fa-code text-primary me-2"></i>
-                                            <strong>Focus:</strong> Full-Stack Development
-                                        </div>
-                                    </div>
+                                    <div class="col-md-6"><div class="info-item"><i class="fas fa-graduation-cap text-primary me-2"></i><strong>Education:</strong> B.Tech CSE (2nd Year)</div></div>
+                                    <div class="col-md-6"><div class="info-item"><i class="fas fa-chart-line text-primary me-2"></i><strong>Focus:</strong> Data Visualization & AI</div></div>
                                 </div>
-                                
-                                <p class="mt-3">I believe in continuous learning and am always excited to take on new challenges that push the boundaries of my knowledge and skills.</p>
                             </div>
                         </div>
                     </div>
@@ -138,129 +113,117 @@
                 </div>
             </div>
             <div class="row">
-                <!-- Frontend Skills -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="skill-category">
-                        <h5 class="skill-category-title">Frontend</h5>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-html5 skill-icon"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-css3-alt skill-icon"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-js-square skill-icon"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-bootstrap skill-icon"></i>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
+                <div class="col-lg-3 col-md-6 mb-4"><div class="skill-category"><h5 class="skill-category-title">Frontend</h5><div class="skill-item"><div class="skill-info"><i class="fab fa-html5 skill-icon"></i><span>HTML</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-css3-alt skill-icon"></i><span>CSS</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-js-square skill-icon"></i><span>JavaScript</span></div><div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-bootstrap skill-icon"></i><span>Bootstrap</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div></div></div>
+                <div class="col-lg-3 col-md-6 mb-4"><div class="skill-category"><h5 class="skill-category-title">Data & AI</h5><div class="skill-item"><div class="skill-info"><i class="fas fa-chart-line skill-icon"></i><span>Chart.js</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fas fa-chart-pie skill-icon"></i><span>Data Viz</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fas fa-brain skill-icon"></i><span>AI Concepts</span></div><div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div></div></div></div>
+                <div class="col-lg-3 col-md-6 mb-4"><div class="skill-category"><h5 class="skill-category-title">Programming</h5><div class="skill-item"><div class="skill-info"><i class="fas fa-code skill-icon"></i><span>C Language</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-java skill-icon"></i><span>Java</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-python skill-icon"></i><span>Python</span></div><div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div></div></div></div>
+                <div class="col-lg-3 col-md-6 mb-4"><div class="skill-category"><h5 class="skill-category-title">Tools & Cloud</h5><div class="skill-item"><div class="skill-info"><i class="fab fa-git-alt skill-icon"></i><span>Git</span></div><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div><div class="skill-item"><div class="skill-info"><i class="fab fa-github skill-icon"></i><span>GitHub</span></div><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Insights & Infographics Section -->
+    <section id="data-insights" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">📊 Data Insights & Infographics</h2>
+                        <p class="section-subtitle">Visualizing interview trends and skill analytics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card insight-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4"><i class="fas fa-chart-line text-primary me-2"></i>Interview Success Factors</h5>
+                            <canvas id="interviewSuccessChart" height="250"></canvas>
+                            <div class="mt-3 text-center"><small class="text-muted">Data based on 500+ interview candidates survey</small></div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Backend Skills -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="skill-category">
-                        <h5 class="skill-category-title">Backend</h5>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-node-js skill-icon"></i>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card insight-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4"><i class="fas fa-chart-bar text-primary me-2"></i>Most In-Demand Tech Skills (2025)</h5>
+                            <canvas id="skillDemandChart" height="250"></canvas>
+                            <div class="mt-3 text-center"><small class="text-muted">Source: Industry job posting analysis</small></div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Programming Languages -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="skill-category">
-                        <h5 class="skill-category-title">Programming</h5>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fas fa-code skill-icon"></i>
-                                <span>C Language</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-java skill-icon"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-python skill-icon"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card insight-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4"><i class="fas fa-chart-pie text-primary me-2"></i>Technical Skills Distribution</h5>
+                            <canvas id="skillsPieChart" height="250"></canvas>
+                            <div class="mt-3 text-center"><small class="text-muted">My current tech stack proficiency</small></div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card insight-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4"><i class="fas fa-chart-line text-primary me-2"></i>Mock Interview Performance</h5>
+                            <canvas id="performanceChart" height="250"></canvas>
+                            <div class="mt-3 text-center"><small class="text-muted">Improvement over practice sessions</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Tools & Cloud -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="skill-category">
-                        <h5 class="skill-category-title">Tools & Cloud</h5>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-git-alt skill-icon"></i>
-                                <span>Git</span>
+    <!-- AI Awareness Section -->
+    <section id="ai-demo" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">🤖 AI-Powered Interview Assistant</h2>
+                        <p class="section-subtitle">Experience basic AI capabilities for interview preparation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card ai-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-robot" style="font-size: 48px; color: var(--color-primary);"></i>
+                                <h4 class="mt-3">Smart Interview Coach</h4>
+                                <p class="text-muted">AI-powered feedback on your interview answers</p>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Select Interview Type:</label>
+                                <select id="interviewType" class="form-control mb-3">
+                                    <option value="technical">Technical Interview</option>
+                                    <option value="hr">HR/Behavioral Interview</option>
+                                    <option value="coding">Coding Interview</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-github skill-icon"></i>
-                                <span>GitHub</span>
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Your Answer:</label>
+                                <textarea id="userAnswer" class="form-control" rows="4" placeholder="Type your interview answer here... (e.g., 'I have experience with JavaScript and React...')"></textarea>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                            <div class="text-center mb-4">
+                                <button id="analyzeAnswerBtn" class="btn btn-primary btn-lg"><i class="fas fa-brain me-2"></i>Analyze with AI</button>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <i class="fab fa-aws skill-icon"></i>
-                                <span>AWS</span>
+                            <div id="aiFeedback" style="display: none;">
+                                <div class="alert alert-info">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-microphone-alt me-3 mt-1" style="font-size: 24px;"></i>
+                                        <div>
+                                            <strong>🤖 AI Analysis:</strong>
+                                            <p id="feedbackText" class="mb-2 mt-2"></p>
+                                            <div id="feedbackScore" class="mt-2">
+                                                <span class="badge bg-success">Score: <span id="scoreValue">0</span>/10</span>
+                                                <span class="badge bg-info ms-2" id="sentimentBadge">Sentiment: Neutral</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
-                            </div>
+                            <div class="mt-4 p-3 bg-light rounded"><small class="text-muted"><i class="fas fa-info-circle me-1"></i>This AI demo simulates sentiment analysis and keyword matching to provide interview feedback. It demonstrates basic Natural Language Processing concepts.</small></div>
                         </div>
                     </div>
                 </div>
@@ -275,92 +238,57 @@
                 <div class="col-lg-12">
                     <div class="section-header text-center mb-5">
                         <h2 class="section-title">My Projects</h2>
-                        <p class="section-subtitle">A showcase of my recent work and achievements</p>
+                        <p class="section-subtitle">Showcasing my work in data visualization and AI integration</p>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <div class="card project-card highlight-card h-100">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center">
+                                    <div class="project-icon-large"><i class="fas fa-brain"></i></div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="featured-badge mb-2"><span class="badge bg-primary">⭐ Featured Project</span><span class="badge bg-info ms-2">AI-Powered</span></div>
+                                    <h5 class="card-title">Smart Interview Preparation System</h5>
+                                    <p class="card-text">An intelligent platform that helps candidates prepare for job interviews using AI-powered question generation, answer analysis, and performance tracking.</p>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <strong><i class="fas fa-check-circle text-primary me-2"></i>Key Features:</strong>
+                                            <ul class="mt-2"><li>AI-generated technical & HR interview questions</li><li>Real-time answer analysis with sentiment scoring</li><li>Performance dashboard with progress tracking</li><li>Mock interview simulator with timed responses</li></ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <strong><i class="fas fa-code text-primary me-2"></i>Tech Stack:</strong>
+                                            <div class="project-tech mt-2"><span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">Chart.js</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4"><a href="#" class="btn btn-primary me-2" onclick="showProjectDemo()"><i class="fas fa-play me-2"></i>View Demo</a><a href="https://github.com/kadalisowmya/smart-interview-system" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github me-2"></i>Source Code</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6 col-md-6 mb-4">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
+                            <div class="project-icon"><i class="fas fa-globe"></i></div>
                             <h5 class="card-title">Personal Portfolio Website</h5>
-                            <p class="card-text">A responsive portfolio website built with HTML, CSS, JavaScript, and Bootstrap to showcase my skills and projects.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                            <a href="https://github.com/kadalisowmya/portfolio" target="_blank" class="btn btn-outline-primary mt-3">
-                                <i class="fab fa-github me-2"></i>View Code
-                            </a>
+                            <p class="card-text">A responsive portfolio website with data visualization, AI demo, and modern UI/UX design principles.</p>
+                            <div class="project-tech"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Bootstrap 5</span><span class="tech-tag">Chart.js</span></div>
+                            <a href="https://github.com/kadalisowmya/kadalisowmya-portfolio" target="_blank" class="btn btn-outline-primary mt-3"><i class="fab fa-github me-2"></i>View Code</a>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-lg-6 col-md-6 mb-4">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h5 class="card-title">Student Management System</h5>
-                            <p class="card-text">A comprehensive system for managing student records, grades, and attendance using Java and database integration.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                            </div>
-                            <a href="https://github.com/kadalisowmya/student-management" target="_blank" class="btn btn-outline-primary mt-3">
-                                <i class="fab fa-github me-2"></i>View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <div class="project-icon">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
-                            <h5 class="card-title">Weather Forecast App</h5>
-                            <p class="card-text">A dynamic weather application that fetches real-time weather data using APIs and displays forecasts with an intuitive UI.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">API Integration</span>
-                            </div>
-                            <a href="https://github.com/kadalisowmya/weather-app" target="_blank" class="btn btn-outline-primary mt-3">
-                                <i class="fab fa-github me-2"></i>View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <div class="project-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <h5 class="card-title">E-Commerce Website</h5>
-                            <p class="card-text">A full-stack e-commerce platform with user authentication, product catalog, and shopping cart functionality.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Bootstrap</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <a href="https://github.com/kadalisowmya/ecommerce-site" target="_blank" class="btn btn-outline-primary mt-3">
-                                <i class="fab fa-github me-2"></i>View Code
-                            </a>
+                            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                            <h5 class="card-title">Data Visualization Dashboard</h5>
+                            <p class="card-text">Interactive dashboard displaying key metrics using Chart.js, demonstrating data understanding and visual clarity.</p>
+                            <div class="project-tech"><span class="tech-tag">Chart.js</span><span class="tech-tag">JavaScript</span><span class="tech-tag">HTML/CSS</span></div>
+                            <a href="#" class="btn btn-outline-primary mt-3" onclick="showDataDemo()"><i class="fas fa-chart-simple me-2"></i>Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -384,32 +312,12 @@
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                    <div class="invalid-feedback">Please enter your name.</div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                    <div class="invalid-feedback">Please enter a valid email.</div>
-                                </div>
+                                <div class="col-md-6 mb-3"><label for="name" class="form-label">Name</label><input type="text" class="form-control" id="name" required><div class="invalid-feedback">Please enter your name.</div></div>
+                                <div class="col-md-6 mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" required><div class="invalid-feedback">Please enter a valid email.</div></div>
                             </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" required>
-                                <div class="invalid-feedback">Please enter a subject.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                                <div class="invalid-feedback">Please enter your message.</div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                                </button>
-                            </div>
+                            <div class="mb-3"><label for="subject" class="form-label">Subject</label><input type="text" class="form-control" id="subject" required><div class="invalid-feedback">Please enter a subject.</div></div>
+                            <div class="mb-3"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" rows="5" required></textarea><div class="invalid-feedback">Please enter your message.</div></div>
+                            <div class="text-center"><button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Send Message</button></div>
                         </form>
                     </div>
                 </div>
@@ -418,14 +326,8 @@
                 <div class="col-lg-12">
                     <div class="contact-info text-center">
                         <div class="contact-links">
-                            <a href="https://github.com/kadalisowmya" target="_blank" class="contact-link">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank" class="contact-link">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
+                            <a href="https://github.com/kadalisowmya" target="_blank" class="contact-link"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
                         </div>
                     </div>
                 </div>
@@ -441,28 +343,17 @@
                     <div class="footer-content text-center">
                         <p>&copy; 2025 Sowmya. All rights reserved.</p>
                         <div class="footer-social">
-                            <a href="https://github.com/kadalisowmya" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+                            <a href="https://github.com/kadalisowmya" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kadali-sowmya-482660343/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Back to Top Button -->
-        <button id="backToTop" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
+        <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
     <script src="app.js"></script>
 </body>
 </html>
