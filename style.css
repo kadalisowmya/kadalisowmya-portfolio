@@ -1446,3 +1446,7 @@ select.form-control {
         background-color: #2a2a2a !important;
     }
 }
+/* Make About Me text visible */
+.about-card, .about-card p, .about-card h4, .about-card div {
+    color: #1a1a1a !important;
+}
