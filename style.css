@@ -1425,3 +1425,40 @@ canvas {
 .badge.bg-warning {
     background: #f59e0b !important;
 }
+/* FIX: Make About Me text visible */
+.about-card .card-body,
+.about-card p,
+.about-card h4,
+.about-card .info-item,
+.about-card strong {
+    color: #333 !important;
+}
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+    .about-card .card-body,
+    .about-card p,
+    .about-card h4,
+    .about-card .info-item,
+    .about-card strong {
+        color: #f0f0f0 !important;
+    }
+}
+
+/* FIX: Make all text in cards visible */
+.card,
+.card-body,
+.card-title,
+.card-text {
+    color: #333 !important;
+}
+
+/* Dark mode card text */
+@media (prefers-color-scheme: dark) {
+    .card,
+    .card-body,
+    .card-title,
+    .card-text {
+        color: #e0e0e0 !important;
+    }
+}
