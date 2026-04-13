@@ -1310,3 +1310,118 @@ body {
     color: var(--color-success);
     font-size: var(--font-size-sm);
 }
+/* New styles for Data Insights and AI Demo */
+.insight-card {
+    transition: transform var(--duration-normal) var(--ease-standard);
+    cursor: pointer;
+}
+
+.insight-card:hover {
+    transform: translateY(-8px);
+}
+
+.highlight-card {
+    border: 2px solid var(--color-primary);
+    background: linear-gradient(135deg, var(--color-surface), var(--color-bg-1));
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(var(--color-teal-500-rgb), 0.1), transparent);
+    opacity: 0;
+    transition: opacity var(--duration-normal);
+}
+
+.highlight-card:hover::before {
+    opacity: 1;
+}
+
+.project-icon-large {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-teal-300));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.project-icon-large i {
+    font-size: 54px;
+    color: white;
+}
+
+.featured-badge {
+    margin-bottom: var(--space-12);
+}
+
+.ai-card {
+    border: 2px solid var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.btn-primary:active {
+    animation: pulse 0.3s ease;
+}
+
+canvas {
+    max-height: 300px;
+    width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .project-icon-large {
+        width: 80px;
+        height: 80px;
+        margin-bottom: var(--space-20);
+    }
+    .project-icon-large i {
+        font-size: 36px;
+    }
+    .highlight-card .row {
+        flex-direction: column;
+    }
+}
+
+.alert-info {
+    background: var(--color-bg-1);
+    border-left: 4px solid var(--color-primary);
+    color: var(--color-text);
+}
+
+.badge.bg-primary {
+    background: var(--color-primary) !important;
+}
+
+.badge.bg-info {
+    background: var(--color-teal-300) !important;
+    color: var(--color-slate-900);
+}
+
+.badge.bg-success {
+    background: #22c55e !important;
+}
+
+.badge.bg-warning {
+    background: #f59e0b !important;
+}
