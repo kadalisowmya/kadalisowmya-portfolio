@@ -346,3 +346,27 @@ const addNewStyles = () => {
     document.head.appendChild(style);
 };
 document.addEventListener('DOMContentLoaded', addNewStyles);
+// FIX: Ensure form inputs are visible
+document.addEventListener('DOMContentLoaded', function() {
+    // Fix all form controls
+    const allInputs = document.querySelectorAll('input, textarea, select');
+    allInputs.forEach(input => {
+        input.style.color = '#333';
+        input.style.backgroundColor = '#fff';
+    });
+    
+    // Fix AI demo textarea specifically
+    const aiTextarea = document.getElementById('userAnswer');
+    if (aiTextarea) {
+        aiTextarea.style.color = '#333';
+        aiTextarea.style.backgroundColor = '#fff';
+        aiTextarea.style.border = '1px solid #ccc';
+    }
+    
+    // Fix contact form inputs
+    const contactInputs = document.querySelectorAll('#contactForm input, #contactForm textarea');
+    contactInputs.forEach(input => {
+        input.style.color = '#333';
+        input.style.backgroundColor = '#fff';
+    });
+});
